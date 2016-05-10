@@ -1,0 +1,13 @@
+<p>It is cat rentals. </p>
+
+{{#each model as |rental|}}
+  <h2>{{rental.title}}</h2>
+  <p>Owner: {{rental.owner}}</p>
+  <p>Type: {{rental.type}}</p>
+  <p>Number of legs: {{rental.legs}}</p>
+{{/each}}
+
+{{#link-to "about"}}About{{/link-to}}
+{{#link-to "contact"}}Click here to contact us.{{/link-to}}
+
+{{outlet}}
